@@ -1,0 +1,14 @@
+/* Footer styles */
+.footer {
+    background-color: #30a6eb; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px 0; /* Padding */
+    text-align: center; /* Center align text */
+    width: 100%; /* Occupy complete width */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    z-index: 900; /* Ensure it's on top of other elements */
+    font-family: 'Roboto', sans-serif; /* Roboto font */
+  }
+  

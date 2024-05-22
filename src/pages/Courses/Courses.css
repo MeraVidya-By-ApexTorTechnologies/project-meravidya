@@ -1,0 +1,26 @@
+.courses-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .courses-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .course {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .course-title {
+    font-size: 1.5rem;
+  }
+  
+  .course-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
