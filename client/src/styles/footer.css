@@ -1,0 +1,22 @@
+.fixed-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2px;
+    text-transform: capitalize;
+    /* display:flex; */
+  }
+
+  .bg-black{
+    background-color: black;
+  }
+
+  .txt-white{
+    color: white;
+  }
+
+  .center-txt{
+    text-align: center;
+  }
+  

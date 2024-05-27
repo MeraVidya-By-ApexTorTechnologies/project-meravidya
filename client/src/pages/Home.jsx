@@ -1,5 +1,5 @@
-import React from 'react';
-import './Home.css'; // Create this file for specific home page styles
+// import React from 'react'
+import '../styles/home.css'
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       </section>
       {/* Add more sections as needed */}
     </main>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
