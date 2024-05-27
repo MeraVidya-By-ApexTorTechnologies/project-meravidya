@@ -28,10 +28,4 @@ function App() {
   )
 }
 
-<<<<<<< Updated upstream
-//sample app
-
-export default App;
-=======
 export default App
->>>>>>> Stashed changes
