@@ -1,0 +1,57 @@
+.become-tutor-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .become-tutor-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .become-tutor-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .tutor-application {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .application-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .application-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

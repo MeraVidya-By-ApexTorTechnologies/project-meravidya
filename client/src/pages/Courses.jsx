@@ -1,5 +1,5 @@
-import React from 'react';
-import './Courses.css'; // Create this file for specific Courses page styles
+import React from 'react'
+import '../styles/courses.css'
 
 const Courses = () => {
   return (
@@ -19,7 +19,7 @@ const Courses = () => {
       </div>
       {/* Add more courses as needed */}
     </div>
-  );
-};
+  )
+}
 
-export default Courses;
+export default Courses

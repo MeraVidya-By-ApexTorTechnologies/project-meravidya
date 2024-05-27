@@ -1,0 +1,27 @@
+.header-container{
+    padding:  8px 4px;
+    /* background-color: blueviolet; */
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 10px;
+}
+
+.home-icon{
+    
+  
+}
+
+.nav-Link{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.nav-Link:hover{
+    font-weight: bold;
+    color: blueviolet;
+}
