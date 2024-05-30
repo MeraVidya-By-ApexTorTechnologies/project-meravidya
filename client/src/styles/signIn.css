@@ -1,0 +1,53 @@
+/* signIn.css */
+.my-class-name{
+    text-align: center;
+}
+
+/* Container styling */
+.signIn-container {
+    width: 300px; /* Adjust width as needed */
+    margin: 100px auto; /* Center the container horizontally */
+    background-color: #ffffff; /* Set the background color of the container */
+    padding: 20px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(245, 106, 106, 0.1); /* Add shadow effect */
+  }
+  
+  /* Form styling */
+  .signIn-form {
+    padding: 20px; /* Adjust as needed */
+  }
+  
+  .signIn-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Adjust input width */
+  .signIn-form input[type="email"],
+  .signIn-form input[type="password"] {
+    width: 25%; /* Adjust as needed */
+    padding-left: 50px;
+    padding: 10px;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  /* Adjust button width */
+  .signIn-form button[type="submit"] {
+    width: 25%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .signIn-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
