@@ -1,13 +1,15 @@
 .header-container{
-    padding:  8px 4px;
-    /* background-color: blueviolet; */
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid blueviolet;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5%;
     margin-bottom: 10px;
+}
+
+.logo-container{
+    height: 100%;
 }
 
 .home-icon{

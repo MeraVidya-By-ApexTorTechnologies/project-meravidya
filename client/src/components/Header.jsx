@@ -1,15 +1,14 @@
 // import React from 'react'
 import '../styles/header.css';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
+import Logo from './Logo'
 
 const Header = () => {
   return (
     <div className="header-container">
       <div className="home-icon">
         <Link className="nav-Link" to="/">
-          <FontAwesomeIcon icon={faHome} />
+          <Logo />
         </Link>
       </div>
 
@@ -19,21 +18,32 @@ const Header = () => {
       <Link className="nav-Link" to="/about">
         about
       </Link>
-      <Link className="nav-Link" to="/courses">
+      {/* <Link className="nav-Link" to="/courses">
         courses
-      </Link>
-      <Link className="nav-Link" to="/find-a-tutor">
+      </Link> */}
+
+<Link className="nav-Link">
+  our services
+</Link>
+
+      {/* <Link className="nav-Link" to="/find-a-tutor">
         find a tutor
       </Link>
       <Link className="nav-Link" to="/join-as-tutor">
         join as tutor
-      </Link>
-      <Link className="nav-Link" to="/signup">
-        signup
-      </Link>
+      </Link> */}
+
+<Link className="nav-Link">
+  our tutors
+</Link>
+
+<Link className="nav-Link" to="/signup">
+        register
+    </Link>
+      
       <Link className="nav-Link" to="/signin">
-        sign in
-      </Link>
+        Login
+      </Link> 
     </div>
   );
 };

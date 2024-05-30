@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/signIn.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
 
 const SignInForm = () => {
   const [email, setEmail] = useState('');
@@ -21,6 +22,7 @@ const SignInForm = () => {
       {loggedIn ? (
         <p>You are logged in!</p>
       ) : (
+        <div>
         <form onSubmit={handleSubmit} className="signIn-form"> {/* Add className for styling */}
           <label>
             Email:</label>
@@ -44,6 +46,12 @@ const SignInForm = () => {
           <br />
           <button type="submit">Sign In</button>
         </form>
+        <p>not a member? <nbsp/>
+           <Link className="nav-Link" style={{textDecoration:'underline'}} to="/signup">
+        signup
+    </Link>
+        </p>
+        </div>
       )}
     </div>
   );
