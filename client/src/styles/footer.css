@@ -9,7 +9,7 @@
   }
 
   .footer-container{
-    max-height: 40vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -64,13 +64,19 @@
     color: white;
   }
 
+  .footer-contact-header{
+    font-size: 1.1rem;
+    font-wight: bold;
+  }
+
 
   .footer-contact{
     /* background-color: red; */
     display: flex;
-    text-align: left;
+    text-align: justify;
     font-size: 0.7rem;
-    
+    max-width: 80%;
+    flex-direction: column
   }
 
   .goTop-icon{
