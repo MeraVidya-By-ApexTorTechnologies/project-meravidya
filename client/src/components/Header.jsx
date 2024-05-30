@@ -1,17 +1,16 @@
 // import React from 'react'
-import "../styles/header.css";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons"; // Import specific icons
+import '../styles/header.css';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
 
 const Header = () => {
   return (
     <div className="header-container">
       <div className="home-icon">
-      <Link className="nav-Link" to="/">
-        
-        <FontAwesomeIcon icon={faHome} />
-      </Link>
+        <Link className="nav-Link" to="/">
+          <FontAwesomeIcon icon={faHome} />
+        </Link>
       </div>
 
       <Link className="nav-Link" to="/">

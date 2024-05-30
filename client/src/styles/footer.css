@@ -1,11 +1,20 @@
 .fixed-footer {
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 2px;
     text-transform: capitalize;
     /* display:flex; */
+  }
+
+  .footer-container{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+    align-items: center;
   }
 
   .bg-black{
@@ -16,7 +25,79 @@
     color: white;
   }
 
-  .center-txt{
-    text-align: center;
-  }
   
+  
+  .footerDetails{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-item-1{
+    grid-column: 1;
+  }
+
+  .footer-page-links, .footer-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    
+    font-size: 0.8rem;
+  }
+
+  .footer-item-2{
+    grid-column: 2;
+  }
+
+  .footer-item-3{
+    grid-column: 3;
+  }
+
+  .nav-footer-Link, .footer-social-links{
+    color: rgba(255, 255, 255, 0.555);
+    text-decoration: none;
+    
+  }
+
+  .nav-footer-Link:hover, .footer-social-links:hover{
+    color: white;
+  }
+
+  .footer-contact-header{
+    font-size: 1.1rem;
+    font-wight: bold;
+  }
+
+
+  .footer-contact{
+    /* background-color: red; */
+    display: flex;
+    text-align: justify;
+    font-size: 0.7rem;
+    max-width: 80%;
+    flex-direction: column
+  }
+
+  .goTop-icon{
+    animation: bouncingBallAnimation 1s ease-in-out infinite;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+   position: fixed;
+   bottom: 1%;
+   background-color: blueviolet;
+  }
+
+  @keyframes bouncingBallAnimation {
+    from { transform: translateY(0); } /* Start at the top */
+    to { transform: translateY(-10px); } /* Move down 100px */
+    /* Add bounce effect with timing function */
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); } /* Go up slightly */
+    100% { transform: translateY(0); } /* Return to starting position */
+  }
