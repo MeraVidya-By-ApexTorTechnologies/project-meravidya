@@ -11,6 +11,7 @@ function App() {
     <div className='app-container'>
       <div id="goToTop"/>
     <Header/>
+    <div className="header-balancer" style={{height:'20vh'}}></div>
     <div className='app'>
 
       <Routes>
