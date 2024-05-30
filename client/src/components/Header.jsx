@@ -3,13 +3,14 @@ import '../styles/header.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
+import Logo from './Logo'
 
 const Header = () => {
   return (
     <div className="header-container">
       <div className="home-icon">
         <Link className="nav-Link" to="/">
-          <FontAwesomeIcon icon={faHome} />
+          <Logo></Logo>
         </Link>
       </div>
 
