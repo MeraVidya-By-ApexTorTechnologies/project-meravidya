@@ -14,6 +14,7 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px 20px;
+    align-items: center;
   }
 
   .bg-black{
@@ -24,9 +25,7 @@
     color: white;
   }
 
-  .center-txt{
-    text-align: center;
-  }
+  
   
   .footerDetails{
     display: grid;
@@ -72,4 +71,27 @@
     text-align: left;
     font-size: 0.7rem;
     
+  }
+
+  .goTop-icon{
+    animation: bouncingBallAnimation 1s ease-in-out infinite;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+   position: fixed;
+   bottom: 1%;
+   background-color: blueviolet;
+  }
+
+  @keyframes bouncingBallAnimation {
+    from { transform: translateY(0); } /* Start at the top */
+    to { transform: translateY(-10px); } /* Move down 100px */
+    /* Add bounce effect with timing function */
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); } /* Go up slightly */
+    100% { transform: translateY(0); } /* Return to starting position */
   }

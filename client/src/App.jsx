@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div className='app-container'>
+      <div id="goToTop"/>
     <Header/>
     <div className='app'>
 
