@@ -1,11 +1,12 @@
 // import React from 'react'
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom';
 
 const FooterPageLinks = () => {
   return (
-    <div className='footer-item-1 footer-page-links'>
-<Link className="nav-footer-Link" to="/">
+    // <div className='footer-item-1 footer-page-links'>
+    <div className="md:col-start-1 sm:row-start-1 flex flex-col justify-start items-start text-xs gap-1">
+      <p className="font-bold capitalize text-lg color-mainGreen">MeraVidya</p>
+      <Link className="nav-footer-Link" to="/">
         home
       </Link>
       <Link className="nav-footer-Link" to="/about">
@@ -26,9 +27,8 @@ const FooterPageLinks = () => {
       <Link className="nav-footer-Link" to="/signin">
         sign in
       </Link>
-
     </div>
-  )
-}
+  );
+};
 
-export default FooterPageLinks
+export default FooterPageLinks;
