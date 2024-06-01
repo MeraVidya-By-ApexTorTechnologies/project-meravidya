@@ -2,39 +2,47 @@
 import '../styles/header.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
-import Logo from './Logo'
+import {  faBars, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'; // Import specific icons
+import Logo from './images/Logo';
+import DarkMode from './DarkMode';
 
 const Header = () => {
   return (
-    <div className="header-container">
-      <div className="home-icon">
-        <Link className="nav-Link" to="/">
+    <div className="flex flex-row sm:justify-start md:justify-center items-center w-full fixed z-50 opacity-95 bgColor-mainGreen header-container">
+      <div>
+        <Link className="nav-Link sm:block hidden" to="/">
           <Logo></Logo>
         </Link>
       </div>
 
-      <Link className="nav-Link" to="/">
+    <div>
+    <FontAwesomeIcon className='sm:block md:hidden text-black' icon={faBars}/>
+    </div>
+
+      <Link className="nav-Link sm:block hidden" to="/">
         home
       </Link>
-      <Link className="nav-Link" to="/about">
+      <Link className="nav-Link sm:block hidden" to="/about">
         about
       </Link>
-      <Link className="nav-Link" to="/courses">
+      <Link className="nav-Link sm:block hidden" to="/courses">
         courses
       </Link>
-      <Link className="nav-Link" to="/find-a-tutor">
+      <Link className="nav-Link sm:block hidden" to="/find-a-tutor">
         find a tutor
       </Link>
-      <Link className="nav-Link" to="/join-as-tutor">
+      <Link className="nav-Link sm:block hidden" to="/join-as-tutor">
         join as tutor
       </Link>
-      <Link className="nav-Link" to="/signup">
+      <Link className="nav-Link sm:block hidden" to="/signup">
         signup
       </Link>
-      <Link className="nav-Link" to="/signin">
+      <Link className="nav-Link sm:block hidden" to="/signin">
         sign in
       </Link>
+
+     <DarkMode/>
+
     </div>
   );
 };
