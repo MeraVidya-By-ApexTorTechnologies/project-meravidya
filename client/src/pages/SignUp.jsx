@@ -1,5 +1,5 @@
 // SignUp.jsx
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import '../styles/signUp.css'; // Import the CSS file
 
 const SignUpForm = () => {
@@ -20,7 +20,7 @@ const SignUpForm = () => {
   };
 
   return (
-    <div>
+    <div className='flex flex-col justify-start items-center h-screen'>
       {signedUp ? (
         <p>You have successfully signed up!</p>
       ) : (

@@ -9,8 +9,8 @@ function App() {
       <div id="goToTop" />
       <Header />
       {/* to balance the space occupied by navbar on the page, with out overlap */}
-      <div className='h-[10vh]' />
-      <div className="min-h-screen">
+      <div className='h-[15vh] bg-[#030012]' />
+      <div className="min-h-screen bg-[#030012] text-white">
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
