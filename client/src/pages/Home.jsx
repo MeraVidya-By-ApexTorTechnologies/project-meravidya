@@ -3,10 +3,11 @@ import '../styles/home.css'
 
 const Home = () => {
   return (
-    <main className="home">
-      <section className="hero">
-        <h1>Welcome to MeraVidya</h1>
-        <p>Your journey to knowledge starts here.</p>
+    <main className="px-5 grid md:grid-cols-2 md:grid-rows-2 xs:grid-rows-4">
+      <section className="flex flex-col justify-around items-center gap-2 col-start-1 ">
+        <h1 className='text-3xl'>Welcome to MeraVidya</h1>
+        <p className='text-md color-mainGreen'>Your journey to knowledge starts here.</p>
+        
       </section>
       <section className="features">
         <h2>Our Features</h2>

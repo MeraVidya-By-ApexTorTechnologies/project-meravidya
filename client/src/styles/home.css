@@ -1,12 +1,12 @@
 .home {
     padding: 60px 20px; /* Add padding to account for fixed header */
-    margin-top: 60px; /* Add margin to account for fixed header */
+    /* margin-top: 60px; Add margin to account for fixed header */
   }
   
   .hero {
     text-align: center;
     padding: 40px 0;
-    background-color: #f3f3f3;
+    /* background-color: #f3f3f3; */
     position: relative;
   }
   
@@ -18,14 +18,14 @@
     margin-bottom: 20px;
   }
   
-  .hero h1 {
+  /* .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-  }
+  } */
   
-  .hero p {
+  /* .hero p {
     font-size: 1.2rem;
-  }
+  } */
   
   .features {
     padding: 20px 0;

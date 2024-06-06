@@ -1,9 +1,15 @@
 /* signUp.css */
 
 .signUp-form {
-    width: 300px;
+    width: 50%;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
+    /* background: red; */
+border: 2px solid white;
+padding: 20px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
   }
   
   .signUp-form label {
@@ -16,12 +22,14 @@
     width: calc(100% - 22px);
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border-bottom: 2px solid #38a5e0;
     border-radius: 3px;
+    background: rgba(0,0,0,0);
+    outline: none;
   }
   
   .signUp-form button[type="submit"] {
-    width: 25%;
+    /* width: 25%; */
     padding: 10px;
     background-color: #007bff;
     color: #fff;

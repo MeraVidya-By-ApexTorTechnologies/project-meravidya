@@ -9,7 +9,7 @@ import { OurServices } from '../pages';
 
 const Header = () => {
   return (
-    <div className="flex flex-row sm:justify-start md:justify-center items-center w-full fixed z-50 opacity-95 bgColor-mainGreen header-container">
+    <div className="flex flex-row sm:justify-start md:justify-center items-center w-full fixed z-50 bgColor-mainGreen header-container">
       <div>
         <Link className="nav-Link sm:block hidden" to="/">
           <Logo></Logo>
@@ -30,27 +30,27 @@ const Header = () => {
         courses
       </Link>
       
-    <OurServices/>
+    {/* <OurServices/> */}
 
 {/* our services dropdown
 on hover show the list
 - find a tutor
 - become a tutor */}
 
-      {/* <Link className="nav-Link sm:block hidden" to="/find-a-tutor">
+      <Link className="nav-Link sm:block hidden" to="/find-a-tutor">
         find a tutor
       </Link>
       <Link className="nav-Link sm:block hidden" to="/join-as-tutor">
         join as tutor
-      </Link> */}
+      </Link>
 
 {/* login dropdown
 - onclick - open login page
 - on hover - open drop down list with register link */}
 
-      {/* <Link className="nav-Link sm:block hidden" to="/signup">
+      <Link className="nav-Link sm:block hidden" to="/signup">
         register
-      </Link> */}
+      </Link>
       <Link className="nav-Link sm:block hidden" to="/signin">
         sign in
       </Link>

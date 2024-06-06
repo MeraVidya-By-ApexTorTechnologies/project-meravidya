@@ -51,7 +51,7 @@ footer {
     /* color: rgba(255, 255, 255, 0.555);
     text-decoration: none; */
     
-    @apply text-white  no-underline opacity-50 hover:text-violet-500
+    @apply text-white  no-underline opacity-50 hover:text-mainGreen hover:opacity-100
   }
 
   /* .nav-footer-Link:hover, .footer-social-links:hover{
