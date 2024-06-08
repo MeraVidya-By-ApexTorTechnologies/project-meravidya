@@ -1,0 +1,5 @@
+.sticker{
+    @apply bg-[#42f5b6] p-2 mr-2 w-7 h-7 font-bold text-black;
+    border-radius:50%;
+    text-align:center
+}
