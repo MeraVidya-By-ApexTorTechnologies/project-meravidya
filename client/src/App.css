@@ -25,3 +25,11 @@
   .bgColor-mainGreen{
     background: #42f5b6
   }
+
+  .button{
+    @apply bg-[#42f5b6] text-black text-sm px-4 py-2 hover:bg-black hover:text-[#42f5b6] capitalize border-[#42f5b6] border-2 hover:border-white rounded-md
+  }
+
+  .border-mainGreen{
+    @apply border-[#42f5b6]
+  }

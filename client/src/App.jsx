@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Footer } from './components';
+import { Header, Footer, VideoBg } from './components';
 import { Home, About, SignUp, FindATutor, Courses, SignIn, JoinAsTutor, NotFound } from './pages';
 import { Routes, Route } from 'react-router-dom';
 
@@ -9,7 +9,8 @@ function App() {
       <div id="goToTop" />
       <Header />
       {/* to balance the space occupied by navbar on the page, with out overlap */}
-      <div className='h-[15vh] bg-[#030012]' />
+      <div className='h-[10vh]  lg:h-[12vh] bg-[#030012]' />
+      
       <div className="min-h-screen bg-[#030012] text-white">
         <Routes>
           <Route path="/" exact element={<Home />} />

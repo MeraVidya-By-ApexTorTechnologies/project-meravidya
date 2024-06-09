@@ -1,0 +1,40 @@
+{
+    "teamData":[
+        {
+            "name":"abhinay",
+            "familyName":"p",
+            "title":"founder & MD",
+            "org":"mera vidya",
+            "gender":"boy"
+        },
+        {
+            "name":"sai sri vinay reddy",
+            "familyName":"s",
+            "title":"team lead",
+            "org":"mera vidya",
+            "gender":"boy"
+        },
+        {
+            "name":"mounika",
+            "familyName":"a",
+            "title":"web developer intern",
+            "org":"mera vidya",
+            "gender":"girl"
+        },
+        {
+            "name":"thejaswi",
+            "familyName":"",
+            "title":"web developer intern",
+            "org":"mera vidya",
+            "gender":"girl"
+        },
+        {
+            "name":"vyshnavi",
+            "familyName":"m",
+            "title":"web developer intern",
+            "org":"mera vidya",
+            "gender":"girl"
+        }
+
+    ]
+}
