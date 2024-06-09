@@ -5,7 +5,7 @@ import Sticker from './Sticker'
 const HomePart4 = () => {
   return (
     <div className="p-8 w-screen">
-      <p className="capitalize text-4xl font-bold pb-4">how meravidya works?</p>
+      <p className="capitalize text-4xl font-bold ">how meravidya works?</p>
       <div className="grid gap-8 md:gap-2 sm:grid-rows-10 md:grid-cols-2 md:grid-rows-5 w-[100%]">
         {/* 1 */}
         <div className="flex flex-col justify-center items-center gap-4">
