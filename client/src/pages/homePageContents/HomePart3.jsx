@@ -1,5 +1,4 @@
 import React from 'react';
-import { div } from 'three/examples/jsm/nodes/Nodes.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/homepart3.css'

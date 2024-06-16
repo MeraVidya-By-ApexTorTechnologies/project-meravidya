@@ -8,7 +8,7 @@ const TeamCard = (props) => {
     
 
   return (
-    <div className='team-card w-[100%] min-h-[10vh] rounded-md flex flex-col gap-2 justify-center items-center p-4 capitalize' >
+    <div className='team-card w-[100%] min-h-[10vh] rounded-md flex flex-col gap-2 justify-center items-center p-4  capitalize' >
         <img src={imgUrl} alt="" className='w-[50%] border-mainGreen border-2 rounded-full p-2'/>
         <p className='color-mainGreen'>{props.name} . {props.familyName}</p>
         <p>{props.title}</p>

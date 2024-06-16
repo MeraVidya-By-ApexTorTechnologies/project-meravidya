@@ -10,6 +10,7 @@ const About = () => {
       <OurStory/>
       <JoinUs/>
     <Team/>
+    {/* <SwiperTest/> */}
   </div>
   )
 }
