@@ -1,65 +1,41 @@
-// SignUp.jsx
-import  { useState } from 'react';
-import '../styles/signUp.css'; // Import the CSS file
+import React from 'react'
+import '../styles/joinAsTutor.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
-const SignUpForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [signedUp, setSignedUp] = useState(false);
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Here you would typically perform signup logic, e.g., sending a request to your backend
-    // For demonstration purposes, let's just log the email and password
-    console.log('Email:', email);
-    console.log('Password:', password);
-    console.log('Confirm Password:', confirmPassword);
-    // After successful signup, set signedUp to true
-    setSignedUp(true);
-  };
-
+const SignUp = () => {
   return (
-    <div className='flex flex-col justify-start items-center h-screen'>
-      {signedUp ? (
-        <p>You have successfully signed up!</p>
-      ) : (
-        <form onSubmit={handleSubmit} className="signUp-form">
-          <label>
-            Email:
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </label>
-          <br />
-          <label>
-            Password:
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </label>
-          <br />
-          <label>
-            Confirm Password:
-            <input
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              required
-            />
-          </label>
-          <br />
-          <button type="submit">Sign Up</button>
-        </form>
-      )}
+    <div className='min-h-screen flex flex-col justify-center items-center w-screen px-9 py-3'>
+          <p className="md:text-2xl mb-8 text-center text-gray-300 font-bold">
+      SignUp
+    </p>
+      <form className="details-form px-4 py-8 flex flex-col gap-4 justify-center items-center ">
+        {/* Add form fields for tutor application */}
+       <input type="text" placeholder='enter name*' className='details-form-fields' required />
+          <input type="email" id="email" name="email" className='details-form-fields' placeholder='enter your email*' required />
+          <input type="tel" placeholder='mobile*' className="details-form-fields" required/>
+          <input type="password" placeholder='password*' className="details-form-fields" required/>
+        {/* Add more form fields as needed */}
+        <button type="submit" className="button">Submit</button>
+        <p className='capitalize text-xs'>or continue with</p>
+        <div className='flex justify-center w-[100%]  py-2 gap-4'>
+          <button className='button rounded-full'>
+          <FontAwesomeIcon icon={faGoogle}/>
+            </button>
+            <button className='button rounded-full'>
+          <FontAwesomeIcon icon={faLinkedinIn}/>
+            </button>
+        </div>
+      </form>
+      <p className="mt-4 text-center text-gray-300">
+    Already existing user?_
+    <Link className='font-bold text-blue-400' to="/signin">
+        SignIn
+      </Link>
+    </p>
     </div>
-  );
-};
+  )
+}
 
-export default SignUpForm;
+export default SignUp
