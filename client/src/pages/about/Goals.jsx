@@ -1,6 +1,5 @@
 import React from 'react'
 import { goalsData } from '../../data/about'
-import { div } from 'three/examples/jsm/nodes/Nodes.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
