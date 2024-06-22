@@ -5,6 +5,9 @@ export default {
     extend: {
     colors:{
       mainGreen:"#42f5b6",
+      theme: {
+        extend: {},
+      },
       // darkNavy:"rgba(var(--navy))",
     },
   },

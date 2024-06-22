@@ -13,7 +13,7 @@ const Home = () => {
       </p>
      </div>
       <HomePart1/>
-      {/* <HomePart2/> */}
+      <HomePart2/>
       <HomePart3/>
       <HomePart4/>
     </div>
