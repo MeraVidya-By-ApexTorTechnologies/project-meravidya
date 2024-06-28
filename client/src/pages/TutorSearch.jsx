@@ -14,7 +14,7 @@ const TutorSearch = () => {
     const mockTutors = [
       { name: 'Vyshnavi', subject: 'Math', location: 'Hyderabad' },
       { name: 'Mounika', subject: 'English', location: 'Hyderabad' },
-      { name: 'Thejaswi', subject: 'Science', location: 'Chitur' },
+      { name: 'Thejaswi', subject: 'Science', location: 'Chittoor' },
       { name: 'Arjun', subject: 'Math', location: 'Mumbai' },
       { name: 'Sana', subject: 'English', location: 'Delhi' },
       { name: 'Ravi', subject: 'Science', location: 'Bangalore' },

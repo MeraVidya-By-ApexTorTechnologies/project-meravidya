@@ -1,31 +1,68 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const HomePart2 = () => {
   return (
-    <div>
-
-<div className="home-section bg-gradient-to-r from-black-500 to-indigo-500">
-      <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row md:items-center md:justify-between">
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Empower Your Learning...</h1>
-          <p className="text-xl text-gray-100 mb-8">Are you looking to enhance your learning journey with expert tutors?</p>
-          <button className="bg-transparent hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full border border-white">Learn More</button>
+    <div className="container mx-auto px-4 py-8">
+      <h2 className="text-center text-4xl font-bold mb-8">Our Latest Blog Posts</h2>
+      <div className="flex flex-wrap justify-center">
+        <div className="w-full md:w-1/3 p-4">
+          <img
+            className="mx-auto rounded-lg shadow-md"
+            src="https://static.wixstatic.com/media/2190eb_48369fed94504ee9bd8e3d2b09735b08~mv2.webp"
+            alt="trophy"
+          />
+          <h3 className="text-center mt-2 text-lg font-bold">Empower Your Learning...</h3>
+          <p className="text-center text-white-700">
+            Are you looking to enhance your learning journey with expert tutors?
+          </p>
+          <div className="flex justify-center">
+          <Link to="/BlogPost">
+      <button className="px-4 py-2 bg-mainGreen text-white rounded-lg hover:bg-mainGreen focus:outline-none">
+        Learn More
+      </button>
+    </Link>
+          </div>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img src="https://static.wixstatic.com/media/2190eb_48369fed94504ee9bd8e3d2b09735b08~mv2.webp/v1/fill/w_925,h_720,al_c,q_85,enc_auto/2190eb_48369fed94504ee9bd8e3d2b09735b08~mv2.webp.svg" alt="Book illustration" className="w-96 h-96 object-cover" />
+        <div className="w-full md:w-1/3 p-4">
+          <img
+            className="mx-auto rounded-lg shadow-md"
+            src="https://static.wixstatic.com/media/2190eb_48369fed94504ee9bd8e3d2b09735b08~mv2.webp"
+            alt="books"
+          />
+          <h3 className="text-center mt-2 text-lg font-bold">Discover the Best Nearby...</h3>
+          <p className="text-center text-white-700">
+            Are you looking for the perfect tutor to help you excel in your studies or prepare for exams?
+          </p>
+          <div className="flex justify-center">
+          <Link to="/BlogPost">
+      <button className="px-4 py-2 bg-mainGreen text-white rounded-lg hover:bg-mainGreen focus:outline-none">
+        Learn More
+      </button>
+    </Link>
+          </div>
         </div>
-        <div className="w-full md:w-1/2 flex flex-col justify-center items-center">
-          <h1 className="text-5xl font-bold text-white mb-4">Empower Your Learning...</h1>
-          <p className="text-xl text-gray-100 mb-8">Are you looking to enhance your learning journey with expert tutors?</p>
-          <button className="bg-transparent hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full border border-white">Learn More</button>
+        <div className="w-full md:w-1/3 p-4">
+          <img
+            className="mx-auto rounded-lg shadow-md"
+            src="https://static.wixstatic.com/media/2190eb_48369fed94504ee9bd8e3d2b09735b08~mv2.webp"
+            alt="lightbulb"
+          />
+          <h3 className="text-center mt-2 text-lg font-bold">Unlock Your Potential...</h3>
+          <p className="text-center text-white-700">
+            Do you often find yourself struggling to grasp certain concepts at school?
+          </p>
+          <div className="flex justify-center">
+          <Link to="/BlogPost">
+      <button className="px-4 py-2 bg-mainGreen text-white rounded-lg hover:bg-mainGreen focus:outline-none">
+        Learn More
+      </button>
+    </Link>
+          </div>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center">
-          <img src="https://static.wixstatic.com/media/2190eb_48369fed94504ee9bd8e3d2b09735b08~mv2.webp/v1/fill/w_925,h_720,al_c,q_85,enc_auto/2190eb_48369fed94504ee9bd8e3d2b09735b08~mv2.webp.svg" alt="Book illustration" className="w-96 h-96 object-cover" />
-        </div>
-        
       </div>
     </div>
-    </div>
+
   )
 }
 

@@ -43,6 +43,9 @@ on hover show the list
       <Link className="nav-Link sm:block hidden" to="/join-as-tutor">
         join as tutor
       </Link>
+      <Link className='nav-Link sm:block hidden' to ="/BlogPost">
+      BlogPost
+      </Link>
 
 {/* login dropdown
 - onclick - open login page

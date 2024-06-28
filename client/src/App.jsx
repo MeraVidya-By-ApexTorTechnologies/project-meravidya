@@ -1,6 +1,6 @@
 import './App.css';
 import { Header, Footer, VideoBg } from './components';
-import { Home, About, SignUp, FindATutor, Courses, SignIn, JoinAsTutor, NotFound } from './pages';
+import { Home, About, BlogPost, SignUp, FindATutor, Courses, SignIn, JoinAsTutor, NotFound } from './pages';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
           <Route path="/join-as-tutor" element={<JoinAsTutor />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/BlogPost" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
