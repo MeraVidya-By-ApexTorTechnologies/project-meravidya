@@ -25,7 +25,8 @@ const HomePart2 = () => {
         
       </div>
     </div>
-    </div>
+
+    </div >
   )
 }
 
