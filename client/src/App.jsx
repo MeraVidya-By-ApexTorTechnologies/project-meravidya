@@ -1,8 +1,11 @@
 import './App.css';
 import { Header, Footer, VideoBg } from './components';
-import { Home, About, SignUp, FindATutor, Courses, SignIn, JoinAsTutor, NotFound} from './pages';
+import { Home, About, SignUp,  FindATutor, Courses, SignIn, JoinAsTutor, NotFound} from './pages';
 import { Routes, Route } from 'react-router-dom';
 import StudentDashboard from './StudentDashboard';
+import Services from './services';
+import tutors from './tutors';
+import Blogslist from './Blogslist';
 import TutorDashboard from './TutorDashboard';
 import PackagePage from './PackagePage';
 import StudentManagement from './StudentManagement';
@@ -15,6 +18,8 @@ import Settings from './Settings';
 import ProfileSettings from './ProfileSettings';
 import AccountSettings from './AccountSettings';
 import NotificationSettings from './NotificationSettings';
+import Contact from './contact';
+import Tutors from './tutors';
 
 
 
@@ -32,6 +37,10 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blogslist" element={<Blogslist />} />
+          <Route path="/tutors" element={<Tutors />} />
           <Route path="/StudentDashboard" element={<StudentDashboard />} />
           <Route path="/Tutordashboard" element={<TutorDashboard />} />
           <Route path="/StudentProfile" element={<StudentProfile />} />

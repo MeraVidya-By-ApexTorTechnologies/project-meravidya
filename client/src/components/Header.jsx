@@ -47,7 +47,7 @@ const Header = () => {
           <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-56 origin-top rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="py-1">
               <Link to="/contact" className="block px-4 py-2 text-center text-sm text-gray-700">Contact</Link>
-              <Link to="/blogs" className="block px-4 py-2 text-center text-sm text-gray-700">Blogs</Link>
+              <Link to="/blogslist" className="block px-4 py-2 text-center text-sm text-gray-700">Blogs</Link>
             </div>
           </div>
         )}
@@ -55,6 +55,7 @@ const Header = () => {
       </Link>
 
       {/* Services Dropdown */}
+      <Link className="nav-Link sm:block hidden" to="/services">
       <div className="relative">
         <button className="nav-Link sm:block hidden" onClick={() => toggleDropdown('services')}>
           Our Services
@@ -69,8 +70,10 @@ const Header = () => {
           </div>
         )}
       </div>
+      </Link>
 
       {/* Tutors Dropdown */}
+      <Link className="nav-Link sm:block hidden" to="/tutors">
       <div className="relative">
         <button className="nav-Link sm:block hidden" onClick={() => toggleDropdown('tutors')}>
           Our Tutors
@@ -85,6 +88,7 @@ const Header = () => {
           </div>
         )}
       </div>
+      </Link>
 
       <Link className="nav-Link sm:block hidden" to="/signup">
         Register
