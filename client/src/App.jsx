@@ -2,8 +2,19 @@ import './App.css';
 import { Header, Footer } from './components';
 import { Home, About, SignUp, FindATutor, Courses, SignIn, JoinAsTutor, NotFound } from './pages';
 import { Routes, Route } from 'react-router-dom';
+import { useState, useEffect} from "react"
+import axios from 'axios';
+
 
 function App() {
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios.get("http://localhost:5000/")
+      console.log(response.data) }
+    fetchData();
+  }); 
+  
   return (
     <div className="max-w-screen overflow-hidden">
       <div id="goToTop" />

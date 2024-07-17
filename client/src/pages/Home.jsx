@@ -1,6 +1,8 @@
 // import React from 'react'
 import '../styles/home.css'
 
+
+
 const Home = () => {
   return (
     <main className="px-5 grid md:grid-cols-2 md:grid-rows-2 xs:grid-rows-4">
