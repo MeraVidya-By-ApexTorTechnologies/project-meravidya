@@ -1,0 +1,4 @@
+.slick-slide > div{
+    @apply mx-2
+}
+

@@ -1,0 +1,5 @@
+export {default as FlowImg1} from './img1.png'
+export {default as FlowImg2} from './img2.png'
+export {default as FlowImg3} from './img3.png'
+export {default as FlowImg4} from './img4.png'
+export {default as FlowImg5} from './img5.png'
