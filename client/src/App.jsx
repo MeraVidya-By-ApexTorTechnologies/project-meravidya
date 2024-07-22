@@ -2,6 +2,10 @@ import './App.css';
 import { Header, Footer, VideoBg } from './components';
 import { Home, About, SignUp,  FindATutor, Courses, SignIn, JoinAsTutor, NotFound} from './pages';
 import { Routes, Route } from 'react-router-dom';
+<<<<<<< HEAD
+import { useState, useEffect} from "react"
+import axios from 'axios';
+=======
 import StudentDashboard from './StudentDashboard';
 import Services from './services';
 import InductionCall from './inductioncall';
@@ -22,9 +26,18 @@ import Contact from './contact';
 import Tutors from './tutors';
 import LearningTools from './learningtools';
 
+>>>>>>> 7c5a30eae63e84d92aa4a88e6085de4d3cf6bee0
 
 
 function App() {
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios.get("http://localhost:5000/")
+      console.log(response.data) }
+    fetchData();
+  }); 
+  
   return (
     <div className="max-w-screen overflow-hidden">
       <div id="goToTop" />

@@ -2,6 +2,8 @@ import '../styles/home.css';
 import { VideoBg } from '../components';
 import { HomePart1, HomePart2, HomePart3, HomePart4 } from './homePageContents';
 
+
+
 const Home = () => {
   return (
     <div className="landing-page m-0 p-0 border-none w-screen h-auto flex flex-col justify-center items-center">
