@@ -74,18 +74,18 @@ function Tutors() {
     <div className="bg-gray-100 min-h-screen py-12">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl sm:text-6xl font-bold text-black text-center mb-8">Meet Our Tutors!!</h2>
-        <div className="mb-8 flex justify-between items-center">
+        <div className="mb-8 flex flex-col sm:flex-row justify-between items-center">
           <input 
             type="text"
             placeholder="Search tutors..."
             value={searchTerm}
             onChange={handleSearchChange}
-            className="border text-black rounded px-4 py-2"
+            className="border text-black rounded px-4 py-2 mb-4 sm:mb-0 sm:mr-4"
           />
           <select 
             value={filterSubject}
             onChange={handleFilterChange}
-            className="border text-black  rounded px-4 py-2"
+            className="border text-black rounded px-4 py-2"
           >
             <option value="">All Subjects</option>
             <option value="Mathematics">Mathematics</option>
